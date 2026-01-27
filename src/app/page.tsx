@@ -7,7 +7,7 @@ export default function Home() {
     <main className="text-black h-full">
       <h1>
         <div className="flex p-5 justify-between bg-gray-200">
-        <span className="text-3xl">nhung le/eri</span>
+        <span className="text-3xl font-medium">nhung le/eri</span>
         <span className="text-xl">thinking of a banger to quote here</span>
         </div>
       </h1>
@@ -20,7 +20,7 @@ export default function Home() {
       {/* D */}
       <div className="relative">
         <BlackKey content="TL;DR"></BlackKey>
-        <WhiteKey content="11.11 is PEPERO Day"></WhiteKey>
+        <WhiteKey content="11.11 is PEPERO Day" path="/pepero-day"></WhiteKey>
       </div>
       {/* C */}
       <div className="relative">
