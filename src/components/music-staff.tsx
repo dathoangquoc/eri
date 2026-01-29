@@ -1,9 +1,6 @@
-import trebleClef from '../../public/treble-clef.svg'
-import Image from 'next/image'
-
 export default function MusicStaff() {
     return (
-        <div className='relative border border-amber-500 min-h-36'>
+        <div className='relative min-h-36'>
             <svg viewBox="0 0 700 100" className="w-full h-fit mx-auto absolute">
                     {[...Array(5)].map((_, i) => (
                     <line
