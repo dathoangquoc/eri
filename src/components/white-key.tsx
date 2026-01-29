@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function WhiteKey({ content, path }: { content?: string, path?: string }) {
     return (
-        <div className="h-28 bg-white hover:bg-gray-700 border-2 border-l-0 rounded-r-lg text-black hover:text-white text-2xl flex items-center justify-center transition duration-300">
+        <div className="h-28 bg-white hover:bg-gray-700 my-0.5 rounded-r-lg text-black hover:text-white text-2xl flex items-center justify-center transition duration-300">
             {content && path ? <Link href={path!}>{content ?? " "}</Link> : " " }
         </div>
     );
