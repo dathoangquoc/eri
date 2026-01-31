@@ -4,9 +4,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="text-black bg-[#1E1E1E] h-full">
+    <main className="text-dark bg-dark h-full">
       <h1>
-        <div className="flex p-5 justify-between bg-[#1E1E1E]">
+        <div className="flex p-5 justify-between bg-dark">
         <span className="text-[28px] font-medium text-white">nhung le/eri</span>
         <span className="text-xl text-white">thinking of a banger to quote here</span>
         </div>

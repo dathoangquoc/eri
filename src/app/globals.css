@@ -56,11 +56,11 @@ body {
 
 @layer base {
   h1 {
-    @apply text-5xl font-medium
+    @apply text-6xl font-medium
   }
 
   h2 {
-    @apply text-4xl font-medium
+    @apply text-5xl font-medium
   }
 
   h3 {
@@ -70,11 +70,11 @@ body {
 
 @layer components {
   .body-1 {
-    @apply text-2xl
+    @apply text-xl
   }
 
   .body-2 {
-    @apply text-xl
+    @apply text-lg
   }
 
   .notes {
