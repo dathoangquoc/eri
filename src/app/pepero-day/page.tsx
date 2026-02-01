@@ -14,11 +14,11 @@ import SectionHeading from "@/components/section-heading";
 
 export default function Page() {
   return (
-    <main className="relative w-screen min-h-screen py-20 px-6 bg-white text-black flex flex-col md:flex-row">
+    <main className="relative w-screen min-h-screen py-20 px-6 bg-white text-black flex md:flex-row flex-col">
       {/* Left Column */}
       <div className="w-full">
         <header className="sticky top-20 self-start w-full h-fit">
-          <h2 className="w-full pb-3">11.11 is PEPERO Day</h2>
+          <h2 className="w-full m-4">11.11 is PEPERO Day</h2>
           <p className="body-1 w-full">
             [COMMUNICATION CAMPAIGN, OFFLINE ACTIVATION]
           </p>
@@ -26,7 +26,7 @@ export default function Page() {
       </div>
 
       {/* Main content */}
-      <section className="flex-1 min-w-[58vw] max-w-[58vw]">
+      <section className="flex-1 w-full md:min-w-[58vw] md:max-w-[58vw] mt-8">
         {/* Main image */}
         <div>
           <p className="flex justify-between">
@@ -34,7 +34,7 @@ export default function Page() {
             <span className="body-1">10,000 visitors</span>
           </p>
           <Image
-            src="/pepero-day/main.png"
+            src="/pepero-day/PEPERO POS overview.png"
             alt="pepero day"
             width={1134}
             height={756}
