@@ -7,12 +7,16 @@ export default function Home() {
     <main className="text-dark bg-dark h-full">
       <h1>
         <div className="flex p-5 justify-between bg-dark">
-        <span className="text-[28px] font-medium text-white">nhung le/eri</span>
-        <span className="text-xl text-white">thinking of a banger to quote here</span>
+          <span className="text-xl md:text-[28px] font-medium text-white">
+            nhung le /eri
+          </span>
+          <span className="text-lg md:text-xl text-white text-right">
+            create a bit of everything
+          </span>
         </div>
       </h1>
 
-      <div className="px-48">
+      <div className="px-2">
         {/* E */}
         <div className="relative">
           <WhiteKey content="Mixed media work"></WhiteKey>
@@ -50,12 +54,10 @@ export default function Home() {
         <div className="relative">
           <WhiteKey content=""></WhiteKey>
         </div>
-              <div className="relative">
+        <div className="relative">
           <WhiteKey content=""></WhiteKey>
         </div>
       </div>
-      
-      
     </main>
   );
 }

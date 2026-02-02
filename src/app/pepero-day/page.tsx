@@ -14,11 +14,20 @@ import SectionHeading from "@/components/section-heading";
 
 export default function Page() {
   return (
-    <main className="relative w-screen min-h-screen py-20 px-6 bg-white text-black flex md:flex-row flex-col">
+    <main className="relative w-screen min-h-screen py-20 px-6 bg-white text-black flex lg:flex-row flex-col">
+        <Button
+          asChild
+          variant="link"
+          className="top-0 right-0 absolute w-fit h-fit text-md lg:hidden"
+        >
+          <Link href="/">
+            Back
+          </Link>
+        </Button>
       {/* Left Column */}
       <div className="w-full">
         <header className="sticky top-20 self-start w-full h-fit">
-          <h2 className="w-full m-4">11.11 is PEPERO Day</h2>
+          <h2 className="w-full mb-4">11.11 is PEPERO Day</h2>
           <p className="body-1 w-full">
             [COMMUNICATION CAMPAIGN, OFFLINE ACTIVATION]
           </p>
@@ -26,7 +35,7 @@ export default function Page() {
       </div>
 
       {/* Main content */}
-      <section className="flex-1 w-full md:min-w-[58vw] md:max-w-[58vw] mt-8">
+      <section className="flex-1 w-full lg:min-w-[58vw] lg:max-w-[58vw] mt-8">
         {/* Main image */}
         <div>
           <p className="flex justify-between">
@@ -273,15 +282,14 @@ export default function Page() {
       </section>
 
       {/* Right Column */}
-      <div className="w-full">
+      <div className="w-full hidden lg:block">
         <Button
           asChild
           variant="link"
-          className="sticky top-20 self-start w-full h-fit"
+          className="sticky top-20 self-start w-full h-fit text-md my-3.5 mx-6"
         >
-          <Link href="/" className="text-sm my-3.5 mx-6">
+          <Link href="/">
             Back
-            {/* <Image alt="arrows icon" src="/icons/arrows-in.svg" width={32} height={32}></Image> */}
           </Link>
         </Button>
       </div>

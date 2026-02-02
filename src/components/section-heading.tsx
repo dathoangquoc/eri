@@ -11,7 +11,7 @@ export default function SectionHeading({
 }: SectionHeadingProps) {
   return (
     <div className="relative mt-24 mb-4">
-      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+      <div className="mb-4 md:absolute top-0 left-0 w-full h-full flex items-center justify-center">
         <h3>{title}</h3>
       </div>
       <p className="flex justify-between">
