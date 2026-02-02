@@ -16,48 +16,48 @@ export default function Home() {
         </div>
       </h1>
 
-      <div className="px-2">
-        {/* E */}
-        <div className="relative">
-          <WhiteKey content="Mixed media work"></WhiteKey>
-        </div>
-        {/* D */}
-        <div className="relative">
-          <BlackKey content="TL;DR"></BlackKey>
-          <WhiteKey content="11.11 is PEPERO Day" path="/pepero-day"></WhiteKey>
-        </div>
+      <div className="lg:px-8 px-2 py-6">
         {/* C */}
         <div className="relative">
-          <BlackKey content="Contacts"></BlackKey>
-          <WhiteKey content=""></WhiteKey>
+          <WhiteKey content="11.11 is PEPERO Day" path="/pepero-day"></WhiteKey>
         </div>
         {/* B */}
         <div className="relative">
-          <WhiteKey content=""></WhiteKey>
+          <WhiteKey content="Dat Bike Quantum S" path="/dat-bike-quantum-s"></WhiteKey>
         </div>
         {/* A */}
         <div className="relative">
-          <BlackKey content="Blogs"></BlackKey>
-          <WhiteKey content=""></WhiteKey>
+          <BlackKey content="TL;DR"></BlackKey>
+          <WhiteKey content='"Kêt" - A Charity Trip' path="/"></WhiteKey>
         </div>
         {/* G */}
         <div className="relative">
-          <BlackKey content=""></BlackKey>
-          <WhiteKey content=""></WhiteKey>
+          <BlackKey content="Blogs"></BlackKey>
+          <WhiteKey content="Personal Works" path="/"></WhiteKey>
         </div>
         {/* F */}
         <div className="relative">
-          <BlackKey content=""></BlackKey>
-          <WhiteKey content=""></WhiteKey>
+          <BlackKey></BlackKey>
+          <WhiteKey content="Bowen Street Press" path="/"></WhiteKey>
         </div>
         {/* E */}
         <div className="relative">
-          <WhiteKey content=""></WhiteKey>
+          <WhiteKey content="Mentree - Mentoring App" path="/"></WhiteKey>
         </div>
+        {/* D */}
         <div className="relative">
-          <WhiteKey content=""></WhiteKey>
+          <BlackKey></BlackKey>
+          <WhiteKey></WhiteKey>
+        </div>
+        {/* C */}
+        <div className="relative">
+          <BlackKey></BlackKey>
+          <WhiteKey></WhiteKey>
         </div>
       </div>
+      <p className="text-white body-1 pb-9 w-full text-center">
+        nhung.ple.hn@gmail.com
+      </p>
     </main>
   );
 }
