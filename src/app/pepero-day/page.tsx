@@ -7,8 +7,7 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
+  CarouselDots,
 } from "@/components/ui/carousel";
 import SectionHeading from "@/components/section-heading";
 
@@ -57,7 +56,7 @@ export default function Page() {
         {/* Tiktoks */}
         <Carousel>
           <CarouselContent>
-            <CarouselItem className="border border-green-400 basis-full lg:basis-1/3">
+            <CarouselItem className="basis-full lg:basis-1/3">
               <>
                 <blockquote
                   className="tiktok-embed"
@@ -251,11 +250,12 @@ export default function Page() {
               </>
             </CarouselItem>
           </CarouselContent>
+          <CarouselDots />
         </Carousel>
 
         <SectionHeading title="Partnership" />
 
-        <Carousel className="w-full h-fit">
+        <Carousel className="w-full h-fit py-8">
           <CarouselContent>
             <CarouselItem className="h-fit">
               <Image
@@ -282,8 +282,7 @@ export default function Page() {
               />
             </CarouselItem>
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselDots/>
         </Carousel>
       </section>
 
