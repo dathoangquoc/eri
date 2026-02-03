@@ -117,7 +117,6 @@ export default function Page() {
                     </a>
                   </section>
                 </blockquote>
-                <script async src="https://www.tiktok.com/embed.js" />
               </>
             </CarouselItem>
             <CarouselItem className="basis-full lg:basis-1/3">
@@ -182,7 +181,6 @@ export default function Page() {
                     </a>
                   </section>
                 </blockquote>
-                <script async src="https://www.tiktok.com/embed.js" />
               </>
             </CarouselItem>
             <CarouselItem className="basis-full lg:basis-1/3">
@@ -246,7 +244,6 @@ export default function Page() {
                     </a>
                   </section>
                 </blockquote>
-                <script async src="https://www.tiktok.com/embed.js" />
               </>
             </CarouselItem>
           </CarouselContent>
@@ -281,6 +278,9 @@ export default function Page() {
           <Link href="/">Back</Link>
         </Button>
       </div>
+      
+      {/* Tiktok script */}
+      <script async src="https://www.tiktok.com/embed.js" />
     </main>
   );
 }

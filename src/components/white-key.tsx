@@ -83,7 +83,7 @@ export default function WhiteKey({
 
       {/* Foreground content */}
       {content && (
-        <span className="relative z-10">{content}</span>
+        <span className="relative z-10 w-full text-end md:text-center">{content}</span>
       )}
     </div>
   );

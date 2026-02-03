@@ -7,10 +7,10 @@ export default function Home() {
     <main className="text-dark bg-dark h-full">
       <h1>
         <div className="flex p-5 justify-between bg-dark">
-          <span className="text-lg lg:text-xl md:text-[28px] font-medium text-[#E4D0EB]">
+          <span className="text-lg lg:text-xl md:text-[28px] font-medium text-[#E4D0EB] pr-4">
             nhung le/eri
           </span>
-          <span className="text-sm md:text-lg text-white text-right">
+          <span className="text-sm md:text-lg text-white text-right pl-4">
             create a bit of everything
           </span>
         </div>
