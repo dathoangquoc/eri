@@ -7,10 +7,10 @@ export default function Home() {
     <main className="text-dark bg-dark h-full">
       <h1>
         <div className="flex p-5 justify-between bg-dark">
-          <span className="text-xl md:text-[28px] font-medium text-white">
-            nhung le /eri
+          <span className="text-lg lg:text-xl md:text-[28px] font-medium text-[#E4D0EB]">
+            nhung le/eri
           </span>
-          <span className="text-lg md:text-xl text-white text-right">
+          <span className="text-sm md:text-lg text-white text-right">
             create a bit of everything
           </span>
         </div>
@@ -55,7 +55,7 @@ export default function Home() {
           <WhiteKey></WhiteKey>
         </div>
       </div>
-      <p className="text-white body-1 pb-9 w-full text-center">
+      <p className="text-white pb-9 w-full text-center text-md lg:text-xl">
         nhung.ple.hn@gmail.com
       </p>
     </main>
