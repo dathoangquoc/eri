@@ -1,17 +1,16 @@
 import Link from "next/link";
-import Image from "next/image";
 import clsx from "clsx";
 
 export default function WhiteKey({
   content,
   path,
-  gif,
+  video,
 }: {
   content?: string;
   path?: string;
-  gif?: string;
+  video?: string; // path to .webm
 }) {
-  const hasGif = Boolean(gif);
+  const hasVideo = Boolean(video);
 
   const Container = (
     <div
@@ -28,7 +27,7 @@ export default function WhiteKey({
         flex items-center justify-center
         overflow-hidden
         `,
-        hasGif &&
+        hasVideo &&
           `
           group
           transition duration-300
@@ -37,13 +36,17 @@ export default function WhiteKey({
           `
       )}
     >
-      {/* Background gif */}
-      {hasGif && (
-        <Image
-          src={gif!}
-          alt="gif"
-          fill
+      {/* Background video */}
+      {hasVideo && (
+        <video
+          src={video!}
+          autoPlay
+          loop
+          muted
+          playsInline
           className="
+            absolute inset-0
+            w-full h-full
             object-cover
             opacity-0 group-hover:opacity-100
             transition-opacity duration-300
@@ -53,7 +56,7 @@ export default function WhiteKey({
       )}
 
       {/* Inset shadow overlay */}
-      {hasGif && (
+      {hasVideo && (
         <div
           className="
             absolute inset-0
@@ -66,7 +69,7 @@ export default function WhiteKey({
       )}
 
       {/* Purple overlay */}
-      {hasGif && (
+      {hasVideo && (
         <div
           className="
             absolute inset-0
@@ -85,6 +88,5 @@ export default function WhiteKey({
     </div>
   );
 
-  // Wrap whole container in Link if path exists
   return path ? <Link href={path}>{Container}</Link> : Container;
 }

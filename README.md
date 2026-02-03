@@ -34,3 +34,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+For optimizing gif
+```bash
+ffmpeg -y -i input.gif   -vf "fps=24,scale=480:-1:flags=lanczos,format=yuv420p"   -c:v libvpx-vp9 -crf 32 -b:v 0   output.webm
+```

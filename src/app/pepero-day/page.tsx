@@ -40,7 +40,7 @@ export default function Page() {
             <span className="body-1">10,000 visitors</span>
           </p>
           <Image
-            src="/pepero-day/PEPERO POS overview.png"
+            src="/pepero-day/main.png"
             alt="pepero day"
             width={1134}
             height={756}
@@ -258,28 +258,13 @@ export default function Page() {
         <Carousel className="w-full h-fit py-8">
           <CarouselContent>
             <CarouselItem className="h-fit">
-              <Image
-                src="/pepero-day/TH fansign.gif"
-                alt="pepero day"
-                width={1134}
-                height={756}
-              />
+              <video src="/pepero-day/1.webm" className="w-full h-auto block object-cover" autoPlay loop muted playsInline />
             </CarouselItem>
             <CarouselItem className="h-fit">
-              <Image
-                src="/pepero-day/TH ready.gif"
-                alt="pepero day"
-                width={1134}
-                height={756}
-              />
+              <video src="/pepero-day/2.webm" className="w-full h-auto block object-cover" autoPlay loop muted playsInline />
             </CarouselItem>
             <CarouselItem className="h-fit">
-              <Image
-                src="/pepero-day/TH sing.gif"
-                alt="pepero day"
-                width={1134}
-                height={756}
-              />
+              <video src="/pepero-day/3.webm" className="w-full h-auto block object-cover" autoPlay loop muted playsInline />
             </CarouselItem>
           </CarouselContent>
           <CarouselDots/>
