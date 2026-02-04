@@ -2,11 +2,11 @@ import Link from "next/link";
 import clsx from "clsx";
 
 export default function WhiteKey({
-  content,
+  children,
   path,
   video,
 }: {
-  content?: string;
+  children?: React.ReactNode
   path?: string;
   video?: string; // path to .webm
 }) {
@@ -82,8 +82,8 @@ export default function WhiteKey({
       )}
 
       {/* Foreground content */}
-      {content && (
-        <span className="relative z-10 w-full text-end md:text-center">{content}</span>
+      {children && (
+        <span className="relative z-10 w-full text-end md:text-center">{children}</span>
       )}
     </div>
   );
