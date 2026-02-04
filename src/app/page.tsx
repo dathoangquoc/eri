@@ -29,9 +29,9 @@ export default function Home() {
         <div className="relative">
           <BlackKey content="TL;DR"></BlackKey>
           <WhiteKey path="/">
-            "Kêt"
-            <span className="hidden sm:inline"> - </span>
-            <span className="sm:hidden">:<br /> </span>
+            "Kêt":
+            <span className="hidden sm:inline"> </span>
+            <span className="sm:hidden"> <br /> </span>
             A Charity Trip
           </WhiteKey>
         </div>
@@ -49,7 +49,7 @@ export default function Home() {
         <div className="relative">
           <WhiteKey path="/">
             Mentree
-            <span className="hidden sm:inline"> - </span>
+            <span className="hidden sm:inline"> </span>
             <span className="sm:hidden"> <br /> </span>
             Mentoring App
           </WhiteKey>
