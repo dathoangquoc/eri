@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function NotFound() {
   return (
-    <div className="flex flex-col justify-center align-middle items-center w-screen h-screen">
+    <div className="flex flex-col justify-center align-middle items-center w-screen h-screen bg-white text-black">
       <Image src="/icons/cat.png" width={200} height={200} alt="catto"></Image>
       <h2 className="pb-6">Still workin on it...</h2>
       <p>Catch you at another time?</p>
