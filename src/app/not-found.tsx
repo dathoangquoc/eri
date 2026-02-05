@@ -7,7 +7,7 @@ export default function NotFound() {
     p-2
     ">
       <Image src="/icons/cat.png" width={200} height={200} alt="catto"></Image>
-      <h2 className="pb-6  lg:text-6xl">Still workin on it...</h2>
+      <h2 className="pb-1 text-3xl lg:text-6xl">Still workin on it...</h2>
       <p className="body-1">Catch you at another time?</p>
       <Link href="/" className="absolute top-4 right-4 text-sm underline">
         Back

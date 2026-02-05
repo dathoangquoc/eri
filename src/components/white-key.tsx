@@ -63,7 +63,7 @@ export default function WhiteKey({
             opacity-0 group-hover:opacity-100
             transition-opacity duration-300
             pointer-events-none
-            shadow-[inset_0_0_40px_rgba(0,0,0,0.6)]
+            inset-shadow-xl
           "
         />
       )}
