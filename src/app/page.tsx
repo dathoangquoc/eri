@@ -23,12 +23,12 @@ export default function Home() {
         </div>
         {/* B */}
         <div className="relative">
-          <WhiteKey path="/dat-bike-quantum-s">Dat Bike Quantum S</WhiteKey>
+          <WhiteKey path="/dat-bike-quantum-s" video="/bg/bike.webm">Dat Bike Quantum S</WhiteKey>
         </div>
         {/* A */}
         <div className="relative">
           <BlackKey content="TL;DR"></BlackKey>
-          <WhiteKey path="/">
+          <WhiteKey path="/" video="/bg/ket.webm">
             "Kêt":
             <span className="hidden sm:inline"> </span>
             <span className="sm:hidden"> <br /> </span>
@@ -38,12 +38,12 @@ export default function Home() {
         {/* G */}
         <div className="relative">
           <BlackKey content="Blogs"></BlackKey>
-          <WhiteKey path="/">Personal Works</WhiteKey>
+          <WhiteKey path="/" video="/bg/mixed-media.webm">Personal Works</WhiteKey>
         </div>
         {/* F */}
         <div className="relative">
           <BlackKey></BlackKey>
-          <WhiteKey path="/">Bowen Street Press</WhiteKey>
+          <WhiteKey path="/" video="/bg/bowen.webm">Bowen Street Press</WhiteKey>
         </div>
         {/* E */}
         <div className="relative">

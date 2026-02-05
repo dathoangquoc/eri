@@ -83,7 +83,7 @@ export default function WhiteKey({
 
       {/* Foreground content */}
       {children && (
-        <span className="relative z-10 w-full text-end md:text-center">{children}</span>
+        <span className="relative z-10 w-full lg:w-fit text-end mx-auto">{children}</span>
       )}
     </div>
   );
