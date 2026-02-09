@@ -8,8 +8,8 @@ export default function AboutPage() {
         Back
       </Link>
 
-      <main className="flex p-24">
-        <div className="w-1/3">
+      <main className="flex flex-col lg:flex-row p-24">
+        <div>
           <h2>Nhung Le</h2>
           <p>A multi-disciplinary creative</p>
           <p>nhung.ple.hn@gmail.com</p>
@@ -25,7 +25,7 @@ export default function AboutPage() {
             </p>
             <p>
               <b>I don't work alone.</b> <span>Throughout</span> uni clubs, IMC
-              agency life <span>and</span>
+              agency life <span>and</span>{" "}
               passion groups, <span>I learn</span> the rhythm of collaboration{" "}
               <span>with designers, strategists, and developers.</span>
             </p>
@@ -49,7 +49,8 @@ export default function AboutPage() {
           <hgroup className="flex flex-col gap-2 [&_p]:pl-2.5">
             <h3 className="">Education</h3>
             <p>
-              <b>Bachelor of Professional Communication</b> <span className="text-secondary">∘ 2022-2026 (3yrs)</span>
+              <b>Bachelor of Professional Communication</b>{" "}
+              <span className="text-secondary">∘ 2022-2026 (3yrs)</span>
             </p>
             <p>RMIT University Vietnam</p>
           </hgroup>
@@ -59,13 +60,18 @@ export default function AboutPage() {
             <h3 className="">Work Experience</h3>
             <hgroup>
               <h4>
-                <b>Account & Strategy Intern</b> <span className="text-secondary"> ∘ Oct 2025-Feb 2026 (4 mos) </span>
+                <b>Account & Strategy Intern</b>{" "}
+                <span className="text-secondary">
+                  {" "}
+                  ∘ Oct 2025-Feb 2026 (4 mos){" "}
+                </span>
               </h4>
               <p>Lotte Daehong Communications Vietnam</p>
             </hgroup>
             <hgroup>
               <h4>
-                <b>Freelance Creative</b> <span className="text-secondary"> ∘ June 2024-present </span>
+                <b>Freelance Creative</b>{" "}
+                <span className="text-secondary"> ∘ June 2024-present </span>
               </h4>
               <p>
                 Projects: myRMIT, Mentree Mentoring App, Bowen Street Press
@@ -74,7 +80,11 @@ export default function AboutPage() {
             </hgroup>
             <hgroup>
               <h4>
-                <b>Head of Marketing</b> <span className="text-secondary"> ∘ Jan 2023-June 2023 (6 mos) </span>
+                <b>Head of Marketing</b>{" "}
+                <span className="text-secondary">
+                  {" "}
+                  ∘ Jan 2023-June 2023 (6 mos){" "}
+                </span>
               </h4>
               <p>RMIT Event Club Hanoi</p>
             </hgroup>

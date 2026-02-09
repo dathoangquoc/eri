@@ -24,7 +24,7 @@ export default function PeperoPage() {
       {/* Left Column */}
       <div className="w-full">
         <header className="sticky top-20 self-start w-full h-fit">
-          <h2 className="w-full mb-4">11.11 is PEPERO Day</h2>
+          <h1 className="w-full mb-4">11.11 is PEPERO Day</h1>
           <p className="body-1 w-full">
             [COMMUNICATION CAMPAIGN, OFFLINE ACTIVATION]
           </p>

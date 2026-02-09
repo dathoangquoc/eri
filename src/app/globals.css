@@ -57,21 +57,21 @@ body {
 
 @layer base {
   h1 {
-    @apply text-6xl lg:text-4xl font-medium
+    @apply text-2xl lg:text-4xl font-medium
   }
 
   h2 {
-    @apply text-5xl font-medium
+    @apply text-xl lg:text-5xl font-medium
   }
 
   h3 {
-    @apply text-3xl font-medium
+    @apply text-lg lg:text-3xl font-medium
   }
 }
 
 @layer components {
   .body-1 {
-    @apply text-xl
+    @apply lg:text-xl
   }
 
   .body-2 {
