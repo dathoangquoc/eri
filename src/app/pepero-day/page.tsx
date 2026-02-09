@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/carousel";
 import SectionHeading from "@/components/section-heading";
 
-export default function Page() {
+export default function PeperoPage() {
   return (
     <main className="relative w-screen min-h-screen py-20 px-6 bg-white text-black flex lg:flex-row flex-col">
       <Button
