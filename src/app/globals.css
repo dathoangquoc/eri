@@ -71,7 +71,7 @@ body {
 
 @layer components {
   .body-1 {
-    @apply lg:text-xl
+    @apply text-sm lg:text-xl
   }
 
   .body-2 {

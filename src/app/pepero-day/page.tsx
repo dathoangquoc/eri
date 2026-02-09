@@ -2,7 +2,7 @@ import Link from "next/link";
 import MusicStaff from "@/components/music-staff";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import ProjectPageLayout from "@/components/project-layout";
 import {
   Carousel,
   CarouselContent,
@@ -13,24 +13,11 @@ import SectionHeading from "@/components/section-heading";
 
 export default function PeperoPage() {
   return (
-    <main className="relative w-screen min-h-screen py-20 px-6 bg-white text-black flex lg:flex-row flex-col">
-      <Button
-        asChild
-        variant="link"
-        className="top-0 right-0 absolute w-fit h-fit text-md lg:hidden"
-      >
-        <Link href="/">Back</Link>
-      </Button>
-      {/* Left Column */}
-      <div className="w-full">
-        <header className="sticky top-20 self-start w-full h-fit px-2">
-          <h1 className="w-full mb-4">11.11 is PEPERO Day</h1>
-          <p className="body-1 w-full">
-            [COMMUNICATION CAMPAIGN, OFFLINE ACTIVATION]
-          </p>
-        </header>
-      </div>
-
+    <ProjectPageLayout
+      title="11.11 is PEPERO Day"
+      subtitle="[COMMUNICATION CAMPAIGN, OFFLINE ACTIVATION]"
+    >
+      
       {/* Main content */}
       <section className="flex-1 w-full lg:min-w-[58vw] lg:max-w-[58vw] mt-8">
         {/* Main image */}
@@ -281,6 +268,6 @@ export default function PeperoPage() {
       
       {/* Tiktok script */}
       <script async src="https://www.tiktok.com/embed.js" />
-    </main>
+    </ProjectPageLayout>
   );
 }

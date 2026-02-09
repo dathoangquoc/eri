@@ -15,8 +15,8 @@ export default function SectionHeading({
         <h3>{title}</h3>
       </div>
       <p className="flex justify-between">
-        <span className="body-1 w-20">{left ?? "left"}</span>
-        <span className="body-1 w-20">{right ?? "right"}</span>
+        <span className="body-1 lg:w-20">{left ?? ""}</span>
+        <span className="body-1 lg:w-20">{right ?? ""}</span>
       </p>
     </div>
   );

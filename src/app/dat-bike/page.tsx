@@ -8,26 +8,14 @@ import {
   CarouselDots,
 } from "@/components/ui/carousel";
 import SectionHeading from "@/components/section-heading";
+import ProjectPageLayout from "@/components/project-layout";
 
 export default function DatBikePage() {
   return (
-    <main className="relative w-screen min-h-screen py-20 px-6 bg-white text-black flex lg:flex-row flex-col">
-      <Button
-        asChild
-        variant="link"
-        className="top-0 right-0 absolute w-fit h-fit text-md lg:hidden"
-      >
-        <Link href="/">Back</Link>
-      </Button>
-      {/* Left Column */}
-      <div className="w-full">
-        <header className="sticky top-20 self-start w-full h-fit px-2">
-          <h1 className="w-full mb-4">Dat Bike Quantum S series</h1>
-          <p className="body-1 w-full">[INFLUENCER CAMPAIGN]</p>
-        </header>
-      </div>
-
-      {/* Main content */}
+    <ProjectPageLayout
+      title="Dat Bike Quantum S series"
+      subtitle="[INFLUENCER CAMPAIGN]"
+    > 
       <section className="flex-1 w-full lg:min-w-[58vw] lg:max-w-[58vw] mt-8">
         {/* Main image */}
         <div>
@@ -193,20 +181,8 @@ export default function DatBikePage() {
           <CarouselDots />
         </Carousel>
       </section>
-
-      {/* Right Column */}
-      <div className="w-full hidden lg:block">
-        <Button
-          asChild
-          variant="link"
-          className="sticky top-20 self-start w-full h-fit text-md my-3.5 mx-6"
-        >
-          <Link href="/">Back</Link>
-        </Button>
-      </div>
-
       {/* Tiktok script */}
       <script async src="https://www.tiktok.com/embed.js" />
-    </main>
+    </ProjectPageLayout>
   );
 }

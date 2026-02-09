@@ -43,11 +43,11 @@ export default function Home() {
         {/* F */}
         <div className="relative">
           <BlackKey></BlackKey>
-          <WhiteKey path="/" video="/bg/bowen.webm">Bowen Street Press</WhiteKey>
+          <WhiteKey path="/bowen" video="/bg/bowen.webm">Bowen Street Press</WhiteKey>
         </div>
         {/* E */}
         <div className="relative">
-          <WhiteKey path="/">
+          <WhiteKey path="/mentree">
             Mentree
             <span className="hidden sm:inline"> </span>
             <span className="sm:hidden"> <br /> </span>
