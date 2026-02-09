@@ -38,7 +38,7 @@ export default function DatBikePage() {
           </p>
           <Image
             src="/dat-bike/main.png"
-            alt="pepero day"
+            alt="dat bike"
             width={1134}
             height={756}
           />

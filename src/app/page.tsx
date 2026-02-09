@@ -28,7 +28,7 @@ export default function Home() {
         {/* A */}
         <div className="relative">
           <BlackKey path="/about"> About </BlackKey>
-          <WhiteKey path="/key-charity" video="/bg/ket.webm">
+          <WhiteKey path="/ket-charity" video="/bg/ket.webm">
             "Kêt":
             <span className="hidden sm:inline"> </span>
             <span className="sm:hidden"> <br /> </span>
