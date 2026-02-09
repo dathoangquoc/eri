@@ -23,12 +23,12 @@ export default function Home() {
         </div>
         {/* B */}
         <div className="relative">
-          <WhiteKey path="/dat-bike-quantum-s" video="/bg/bike.webm">Dat Bike Quantum S</WhiteKey>
+          <WhiteKey path="/dat-bike" video="/bg/bike.webm">Dat Bike Quantum S</WhiteKey>
         </div>
         {/* A */}
         <div className="relative">
           <BlackKey path="/about"> About </BlackKey>
-          <WhiteKey path="/" video="/bg/ket.webm">
+          <WhiteKey path="/key-charity" video="/bg/ket.webm">
             "Kêt":
             <span className="hidden sm:inline"> </span>
             <span className="sm:hidden"> <br /> </span>
