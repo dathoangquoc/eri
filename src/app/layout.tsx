@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistMono.variable} antialiased w-full overflow-x-hidden`}
+        className={`${geistMono.variable} antialiased w-full overflow-x-hidden overflow-y-auto no-scrollbar`}
       >
         <DevConsoleMessage/>
         {children}

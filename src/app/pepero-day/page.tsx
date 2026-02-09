@@ -254,17 +254,6 @@ export default function PeperoPage() {
           <CarouselDots/>
         </Carousel>
       </section>
-
-      {/* Right Column */}
-      <div className="w-full hidden lg:block">
-        <Button
-          asChild
-          variant="link"
-          className="sticky top-20 self-start w-full h-fit text-md my-3.5 mx-6"
-        >
-          <Link href="/">Back</Link>
-        </Button>
-      </div>
       
       {/* Tiktok script */}
       <script async src="https://www.tiktok.com/embed.js" />

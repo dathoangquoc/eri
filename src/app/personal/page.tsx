@@ -10,7 +10,7 @@ export default function PersonalWorksPage() {
         {/* Main image */}
         <div className="body-1">
           <p className="flex justify-between">
-            Hội An - Cut-out poetry from a travel magazine
+            Hoi An - Cut-out poetry from a travel magazine
             <span>Sep 2025</span>
           </p>
           <Image
