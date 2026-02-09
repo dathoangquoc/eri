@@ -239,7 +239,7 @@ export default function PeperoPage() {
 
         <SectionHeading title="Partnership" />
 
-        <Carousel className="w-full h-fit py-8">
+        <Carousel className="w-full h-fit pb-8">
           <CarouselContent>
             <CarouselItem className="h-fit">
               <video src="/pepero-day/1.webm" className="w-full h-auto block object-cover" autoPlay loop muted playsInline />

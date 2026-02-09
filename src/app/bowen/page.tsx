@@ -6,7 +6,10 @@ import ProjectPageLayout from "@/components/project-layout";
 
 export default function BowenPage() {
   return (
-    <ProjectPageLayout title="Bowen Street Press" subtitle="[COMMUNICATION CAMPAIGN]">
+    <ProjectPageLayout
+      title="Bowen Street Press"
+      subtitle="[COMMUNICATION CAMPAIGN]"
+    >
       <section className="flex-1 w-full lg:min-w-[58vw] lg:max-w-[58vw] mt-8">
         {/* Main image */}
         <div>
@@ -18,11 +21,13 @@ export default function BowenPage() {
             creatives a leverage through a network of talented alumni and
             industry connections.
           </p>
-          <Image
-            src="/personal/main.png"
-            alt="cut out poetry from a travel magazine"
-            width={1134}
-            height={756}
+          <video
+            src="/bowen/main.webm"
+            className="w-full h-auto block object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
           />
         </div>
 
@@ -43,7 +48,35 @@ export default function BowenPage() {
           allowFullScreen
         />
 
-        <SectionHeading title="UI/UX Design" left="Web design chosen by client" right="Maintain the human-focused theme" />
+        <SectionHeading
+          title="UI/UX Design"
+          left="Web design chosen by client"
+          right="Maintain the human-focused theme"
+        />
+        <video
+          src="/bowen/1.webm"
+          className="w-full h-auto block object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+        <Image
+          src="/bowen/2.png"
+          alt="bowen street press website design"
+          width={1134}
+          height={756}
+        />
+
+        <p className="body-1 pt-12 lg:pt-24">
+          Hand drawn draft of the web idea on bread pack
+        </p>
+        <Image
+          src="/bowen/3.png"
+          alt="bowen street press website design"
+          width={1134}
+          height={756}
+        />
       </section>
       {/* Tiktok script */}
       <script async src="https://www.tiktok.com/embed.js" />
