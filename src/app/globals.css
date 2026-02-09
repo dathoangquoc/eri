@@ -81,6 +81,10 @@ body {
   .notes {
     @apply italic
   }
+
+  .tiny {
+    @apply text-xs lg:text-sm
+  }
 }
 
 :root {

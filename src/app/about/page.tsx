@@ -8,15 +8,16 @@ export default function AboutPage() {
         Back
       </Link>
 
-      <main className="flex flex-col lg:flex-row p-24">
-        <div>
-          <h2>Nhung Le</h2>
-          <p>A multi-disciplinary creative</p>
-          <p>nhung.ple.hn@gmail.com</p>
+      <main className="flex flex-col lg:flex-row">
+        <div className="px-3 lg:px-24 pt-24 pb-10 border-b lg:border-r">
+          <h2 className="lg:border-b-2 border-dotted">Nhung Le</h2>
+          <p className="pt-3">A multi-disciplinary creative</p>
+          <p className="pt-2">nhung.ple.hn@gmail.com</p>
         </div>
 
-        <div className="w-2/3 flex flex-col gap-14">
-          <hgroup className="flex flex-col gap-5 [&_p>b:first-of-type]:text-2xl [&_p>span]:opacity-35">
+        <div className="lg:w-2/3 px-3 lg:px-24 pt-10 lg:pt-60 flex flex-col lg:gap-14 gap-8">
+          <hgroup className="flex flex-col gap-5 
+          [&_p>b:first-of-type]:font-normal lg:[&_p>b:first-of-type]:font-bold lg:[&_p>b:first-of-type]:text-2xl [&_p>span]:opacity-35">
             <p>
               <b>I do creative things.</b> <span>I love the</span> process of
               making: <span>where ideas brew, stumble, and resolve across</span>{" "}
@@ -50,7 +51,7 @@ export default function AboutPage() {
             <h3 className="">Education</h3>
             <p>
               <b>Bachelor of Professional Communication</b>{" "}
-              <span className="text-secondary">∘ 2022-2026 (3yrs)</span>
+              <span className="text-secondary"> <br className="lg:hidden"/>∘ 2022-2026 (3yrs)</span>
             </p>
             <p>RMIT University Vietnam</p>
           </hgroup>
@@ -63,6 +64,7 @@ export default function AboutPage() {
                 <b>Account & Strategy Intern</b>{" "}
                 <span className="text-secondary">
                   {" "}
+                  <br className="lg:hidden"/>
                   ∘ Oct 2025-Feb 2026 (4 mos){" "}
                 </span>
               </h4>
@@ -71,9 +73,9 @@ export default function AboutPage() {
             <hgroup>
               <h4>
                 <b>Freelance Creative</b>{" "}
-                <span className="text-secondary"> ∘ June 2024-present </span>
+                <span className="text-secondary"> <br className="lg:hidden"/> ∘ June 2024-present </span>
               </h4>
-              <p>
+              <p className="tiny">
                 Projects: myRMIT, Mentree Mentoring App, Bowen Street Press
                 website
               </p>
@@ -83,6 +85,7 @@ export default function AboutPage() {
                 <b>Head of Marketing</b>{" "}
                 <span className="text-secondary">
                   {" "}
+                  <br className="lg:hidden"/>
                   ∘ Jan 2023-June 2023 (6 mos){" "}
                 </span>
               </h4>
@@ -96,26 +99,26 @@ export default function AboutPage() {
             <div className="flex gap-5 p-4">
               <Image
                 src="/about/figma.svg"
-                width={69}
-                height={69}
+                width={50}
+                height={50}
                 alt="Figma logo"
               ></Image>
               <Image
                 src="/about/ps.svg"
-                width={69}
-                height={69}
+                width={50}
+                height={50}
                 alt="Adobe Photoshop logo"
               ></Image>
               <Image
                 src="/about/pr.svg"
-                width={69}
-                height={69}
+                width={50}
+                height={50}
                 alt="Adobe Premiere logo"
               ></Image>
               <Image
                 src="/about/au.svg"
-                width={69}
-                height={69}
+                width={50}
+                height={50}
                 alt="Adobe Audition logo"
               ></Image>
             </div>
