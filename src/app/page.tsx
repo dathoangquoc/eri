@@ -27,7 +27,7 @@ export default function Home() {
         </div>
         {/* A */}
         <div className="relative">
-          <BlackKey content="TL;DR"></BlackKey>
+          <BlackKey path="/about"> About </BlackKey>
           <WhiteKey path="/" video="/bg/ket.webm">
             "Kêt":
             <span className="hidden sm:inline"> </span>
@@ -37,7 +37,7 @@ export default function Home() {
         </div>
         {/* G */}
         <div className="relative">
-          <BlackKey content="Blogs"></BlackKey>
+          <BlackKey> Blogs </BlackKey>
           <WhiteKey path="/" video="/bg/mixed-media.webm">Personal Works</WhiteKey>
         </div>
         {/* F */}
