@@ -37,8 +37,8 @@ export default function Home() {
         </div>
         {/* G */}
         <div className="relative">
-          <BlackKey> Blogs </BlackKey>
-          <WhiteKey path="/" video="/bg/mixed-media.webm">Personal Works</WhiteKey>
+          <BlackKey path="/blogs"> Blogs </BlackKey>
+          <WhiteKey path="/personal" video="/bg/mixed-media.webm">Personal Works</WhiteKey>
         </div>
         {/* F */}
         <div className="relative">

@@ -21,7 +21,7 @@ export default function DatBikePage() {
       </Button>
       {/* Left Column */}
       <div className="w-full">
-        <header className="sticky top-20 self-start w-full h-fit">
+        <header className="sticky top-20 self-start w-full h-fit px-2">
           <h1 className="w-full mb-4">Dat Bike Quantum S series</h1>
           <p className="body-1 w-full">[INFLUENCER CAMPAIGN]</p>
         </header>
@@ -36,12 +36,7 @@ export default function DatBikePage() {
             faced immense skepticism from the public. How can a Vietnamese
             start-up brand like Dat Bike break down those cognitive barriers?
           </p>
-          <Image
-            src="/dat-bike/main.png"
-            alt="dat bike"
-            width={1134}
-            height={756}
-          />
+          <video src="/dat-bike/main.webm" className="w-full h-auto block object-cover" autoPlay loop muted playsInline />
         </div>
 
         <SectionHeading
