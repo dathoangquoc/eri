@@ -18,18 +18,18 @@ export default function Home() {
       <div className="lg:px-8 px-2 py-6">
         {/* C */}
         <div className="relative">
-          <WhiteKey path="/pepero-day" video="/bg/pepero.webm">
+          <WhiteKey path="/pepero-day" video="/bg/pepero.webm" tags={["Content Co-ord", "Artist Co-ord"]}>
           11.11 is PEPERO Day
           </WhiteKey>
         </div>
         {/* B */}
         <div className="relative">
-          <WhiteKey path="/dat-bike" video="/bg/bike.webm">Dat Bike Quantum S</WhiteKey>
+          <WhiteKey path="/dat-bike" video="/bg/bike.webm" tags={["Content Co-ord"]}>Dat Bike Quantum S</WhiteKey>
         </div>
         {/* A */}
         <div className="relative">
           <BlackKey path="/about"> About </BlackKey>
-          <WhiteKey path="/ket-charity" video="/bg/ket.webm">
+          <WhiteKey path="/ket-charity" video="/bg/ket.webm" tags={["Video Production", "UI/UX Design", "Copywriting"]}>
             "Ket":
             <span className="hidden sm:inline"> </span>
             <span className="sm:hidden"> <br /> </span>
@@ -39,16 +39,16 @@ export default function Home() {
         {/* G */}
         <div className="relative">
           <BlackKey path="/blogs"> Blogs </BlackKey>
-          <WhiteKey path="/personal" video="/bg/mixed-media.webm">Personal Works</WhiteKey>
+          <WhiteKey path="/personal" video="/bg/mixed-media.webm" tags={["Photography"]}>Personal Works</WhiteKey>
         </div>
         {/* F */}
         <div className="relative">
           <BlackKey></BlackKey>
-          <WhiteKey path="/bowen" video="/bg/bowen.webm">Bowen Street Press</WhiteKey>
+          <WhiteKey path="/bowen" video="/bg/bowen.webm" tags={["Mixed Media"]}>Bowen Street Press</WhiteKey>
         </div>
         {/* E */}
         <div className="relative">
-          <WhiteKey path="/mentree">
+          <WhiteKey path="/mentree" tags={["UI,UX Design", "UX Research"]}>
             Mentree
             <span className="hidden sm:inline"> </span>
             <span className="sm:hidden"> <br /> </span>

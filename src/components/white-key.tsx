@@ -5,10 +5,12 @@ export default function WhiteKey({
   children,
   path,
   video,
+  tags,
 }: {
-  children?: React.ReactNode
+  children?: React.ReactNode;
   path?: string;
   video?: string; // path to .webm
+  tags?: string[];
 }) {
   const hasVideo = Boolean(video);
 
@@ -33,7 +35,7 @@ export default function WhiteKey({
           transition duration-300
           hover:text-white
           cursor-pointer
-          `
+          `,
       )}
     >
       {/* Background video */}
@@ -73,7 +75,7 @@ export default function WhiteKey({
         <div
           className="
             absolute inset-0
-            bg-[#3A1C36]/40
+            bg-accent/40
             opacity-0 group-hover:opacity-100
             transition-opacity duration-300
             pointer-events-none
@@ -83,7 +85,20 @@ export default function WhiteKey({
 
       {/* Foreground content */}
       {children && (
-        <span className="relative z-10 w-full lg:w-fit text-end mx-auto">{children}</span>
+        <div className="flex w-full h-full items-center justify-center">
+          <span className="relative z-10 w-full lg:w-[40%] text-end">
+            {children}
+          </span>
+          {tags &&
+            tags.map((tag) => (
+              <div
+                key={tag}
+                className="text-lg z-20 ml-5 p-2 bg-[#E4D0EBB2]/70 text-white border border-white"
+              >
+                {tag}
+              </div>
+            ))}
+        </div>
       )}
     </div>
   );
