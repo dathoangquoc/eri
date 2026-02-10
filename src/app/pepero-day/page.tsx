@@ -39,7 +39,11 @@ export default function PeperoPage() {
 
       <SectionHeading
         title="Content Coordination"
-        left={<span>100,000 <br className="hidden lg:block"/> engagements</span>}
+        left={
+          <span>
+            100,000 <br className="hidden lg:block" /> engagements
+          </span>
+        }
         right="2.5M views"
       />
 
@@ -248,13 +252,17 @@ export default function PeperoPage() {
         <CarouselDots />
       </Carousel>
 
-      <SectionHeading 
-        title="Artist Coordination" 
+      <SectionHeading
+        title="Artist Coordination"
         left={
-          <span>(S)TRONG <br /> Trong Hieu</span>
+          <span>
+            (S)TRONG <br /> Trong Hieu
+          </span>
         }
         right={
-          <span>Performance, <br className="hidden lg:block"/> Fansign</span>
+          <span>
+            Performance, <br className="hidden lg:block" /> Fansign
+          </span>
         }
       />
       <p className="description">
@@ -276,8 +284,16 @@ export default function PeperoPage() {
             />
           </CarouselItem>
           <CarouselItem className="h-fit">
+            <Image
+              src="/pepero-day/2.png"
+              alt="pepero day"
+              width={1134}
+              height={756}
+            />
+          </CarouselItem>
+          <CarouselItem className="h-fit">
             <video
-              src="/pepero-day/2.webm"
+              src="/pepero-day/3.webm"
               className="w-full h-auto block object-cover"
               autoPlay
               loop
@@ -287,7 +303,7 @@ export default function PeperoPage() {
           </CarouselItem>
           <CarouselItem className="h-fit">
             <video
-              src="/pepero-day/3.webm"
+              src="/pepero-day/4.webm"
               className="w-full h-auto block object-cover"
               autoPlay
               loop

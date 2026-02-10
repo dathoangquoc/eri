@@ -37,5 +37,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 For optimizing gif
 ```bash
-ffmpeg -y -i input.gif   -vf "fps=24,scale=480:-1:flags=lanczos,format=yuv420p"   -c:v libvpx-vp9 -crf 32 -b:v 0   output.webm
+ffmpeg -y -i 4.gif \
+-vf "fps=24,scale=720:-1:flags=lanczos,format=yuv420p" \
+-c:v libvpx-vp9 \
+-crf 18 -b:v 0 \
+-deadline good -cpu-used 1 \
+-row-mt 1 \
+4.webm
+
 ```
