@@ -28,10 +28,14 @@ export default function DatBikePage() {
 
         <SectionHeading
           title="Content Coordination"
-          left="Over 1M engagements"
+          left={
+            <span>
+            Over 1M <br className="hidden lg:block" /> engagements
+          </span>
+          }
           right="15M views"
         />
-        <p>
+        <p className="description">
           As a start-up, Dat Bike has the freedom to define its own personality,
           so we chose wit and fierceness to cut through the usual noise, getting
           the audience to hear what Dat Bike has to offer. I coordinated

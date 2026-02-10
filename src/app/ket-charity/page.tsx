@@ -23,9 +23,10 @@ export default function KetCharityPage() {
         </div>
 
         <p className="pt-12 lg:pt-24">
-          It was another day at Thien Huong Pagoda when our club ...?
+          It was another day at Thien Huong Pagoda as our club arrived.
         </p>
         <Image
+          className="pb-0.5"
           src="/ket-charity/1.png"
           alt="ket charity"
           width={1134}

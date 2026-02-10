@@ -49,6 +49,7 @@
 @theme {
   --color-dark: #1E1E1E;
   --color-secondary: #C2C2C2;
+  --color-accent: #3A1C36
 }
 
 body {

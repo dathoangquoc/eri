@@ -31,7 +31,7 @@ export default function Home() {
         <div className="relative">
           <BlackKey path="/about"> About </BlackKey>
           <WhiteKey path="/ket-charity" video="/bg/ket.webm">
-            "Kêt":
+            "Ket":
             <span className="hidden sm:inline"> </span>
             <span className="sm:hidden"> <br /> </span>
             A Charity Trip

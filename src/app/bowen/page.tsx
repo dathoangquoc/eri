@@ -31,7 +31,7 @@ export default function BowenPage() {
         </div>
 
         <SectionHeading title="Campaign Video Production" />
-        <p className="body-1">
+        <p className="description">
           Based on the concept of tree vines connecting everybody everywhere
           together, I sum up the team’s communication strategy in an
           audio-visual work.
@@ -49,8 +49,14 @@ export default function BowenPage() {
 
         <SectionHeading
           title="UI/UX Design"
-          left="Web design chosen by client"
-          right="Maintain the human-focused theme"
+          left={
+            <span>
+              Web design <br className="hidden lg:block" /> <span className="text-accent font-bold">chosen</span>  by client
+            </span>
+          }
+          right={
+            <span>Maintain the human-<br className="hidden lg:block" /> focused theme</span>
+          }
         />
         <video
           src="/bowen/1.webm"
