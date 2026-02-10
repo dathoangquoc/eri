@@ -85,19 +85,21 @@ export default function WhiteKey({
 
       {/* Foreground content */}
       {children && (
-        <div className="flex w-full h-full items-center justify-center">
-          <span className="relative z-10 w-full lg:w-[40%] text-end">
+        <div className="flex w-full h-full items-center">
+          <span className="z-10 w-full lg:w-[60%] text-end">
             {children}
           </span>
+          <div className="flex gap-2 ml-5 invisible group-hover:visible">
           {tags &&
             tags.map((tag) => (
               <div
-                key={tag}
-                className="text-lg z-20 ml-5 p-2 bg-[#E4D0EBB2]/70 text-white border border-white"
+              key={tag}
+              className="text-lg z-20 p-2 bg-[#E4D0EBB2]/70 text-white border border-white"
               >
                 {tag}
               </div>
             ))}
+            </div>
         </div>
       )}
     </div>
