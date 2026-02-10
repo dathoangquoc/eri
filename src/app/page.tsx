@@ -1,13 +1,12 @@
 import WhiteKey from "@/components/white-key";
 import BlackKey from "@/components/black-key";
-import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="text-dark bg-dark h-full">
       <h1>
-        <div className="flex px-2 pt-4 justify-between bg-dark">
-          <span className="w-[40%] text-sm lg:text-xl md:text-[28px] font-medium text-[#E4D0EB]">
+        <div className="flex px-2 lg:px-8 pt-4 items-center justify-between bg-dark">
+          <span className="w-[40%] text-lg lg:text-4xl md:text-[28px] font-medium text-[#E4D0EB]">
             nhung le/eri
           </span>
           <span className="w-[60%] text-xs md:text-lg text-white text-right">
