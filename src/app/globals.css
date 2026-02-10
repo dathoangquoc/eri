@@ -85,6 +85,11 @@ body {
   .tiny {
     @apply text-xs lg:text-sm
   }
+
+  .description {
+    font-family: var(--font-gentium-plus), serif;
+    @apply text-base lg:text-lg text-center text-[#444444] font-normal pb-3
+  }
 }
 
 @layer utilities {

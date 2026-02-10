@@ -13,7 +13,7 @@ export default function ProjectPageLayout({
   children,
 }: ProjectPageLayoutProps) {
   return (
-    <main className="relative w-screen min-h-screen py-20 px-3 lg:px-6 bg-white text-black flex lg:flex-row flex-col no-scrollbar">
+    <main className="relative w-screen min-h-screen py-20 px-3 lg:px-6 bg-[#F3F3F3] text-black flex lg:flex-row flex-col no-scrollbar">
       <Button
         asChild
         variant="link"
@@ -23,24 +23,28 @@ export default function ProjectPageLayout({
       </Button>
       {/* Left Column */}
       <div className="w-full">
-        <header className="sticky top-20 self-start w-full h-fit lg:px-2">
+        <header className="sticky top-27 self-start w-full h-fit lg:px-2">
           <h1 className="w-full mb-4">{title}</h1>
           <p className="body-1 w-full">{subtitle}</p>
         </header>
       </div>
 
       {/* Main content */}
-      {children}
+      <section className="flex-1 w-full lg:min-w-[58vw] lg:max-w-[58vw] mt-8">
+        {children}
+      </section>
 
       {/* Right Column */}
-      <div className="w-full hidden lg:block">
-        <Button
-          asChild
-          variant="link"
-          className="sticky top-20 self-start w-full h-fit text-md my-3.5 mx-6"
-        >
-          <Link href="/">Back</Link>
-        </Button>
+      <div className="w-full hidden lg:block relative">
+        <div>
+          <Button
+            asChild
+            variant="link"
+            className="absolute top-0 right-0 w-fit h-fit text-md"
+          >
+            <Link href="/">Back</Link>
+          </Button>
+        </div>
       </div>
     </main>
   );

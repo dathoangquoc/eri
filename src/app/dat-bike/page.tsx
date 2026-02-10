@@ -16,7 +16,6 @@ export default function DatBikePage() {
       title="Dat Bike Quantum S series"
       subtitle="[INFLUENCER CAMPAIGN]"
     > 
-      <section className="flex-1 w-full lg:min-w-[58vw] lg:max-w-[58vw] mt-8">
         {/* Main image */}
         <div>
           <p>
@@ -180,7 +179,6 @@ export default function DatBikePage() {
           </CarouselContent>
           <CarouselDots />
         </Carousel>
-      </section>
       {/* Tiktok script */}
       <script async src="https://www.tiktok.com/embed.js" />
     </ProjectPageLayout>

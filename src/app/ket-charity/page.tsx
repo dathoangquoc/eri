@@ -6,7 +6,6 @@ import ProjectPageLayout from "@/components/project-layout";
 export default function KetCharityPage() {
   return (
     <ProjectPageLayout title='"Ket" A charity trip' subtitle="[PHOTO DOCUMENTARY]">
-      <section className="flex-1 w-full lg:min-w-[58vw] lg:max-w-[58vw] mt-8">
         {/* Main image */}
         <div>
           <p>
@@ -90,7 +89,6 @@ export default function KetCharityPage() {
           width={1134}
           height={756}
         />
-      </section>
       {/* Tiktok script */}
       <script async src="https://www.tiktok.com/embed.js" />
     </ProjectPageLayout>

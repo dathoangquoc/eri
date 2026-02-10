@@ -10,7 +10,6 @@ export default function BowenPage() {
       title="Bowen Street Press"
       subtitle="[COMMUNICATION CAMPAIGN]"
     >
-      <section className="flex-1 w-full lg:min-w-[58vw] lg:max-w-[58vw] mt-8">
         {/* Main image */}
         <div>
           <p className="body-1">
@@ -77,7 +76,6 @@ export default function BowenPage() {
           width={1134}
           height={756}
         />
-      </section>
       {/* Tiktok script */}
       <script async src="https://www.tiktok.com/embed.js" />
     </ProjectPageLayout>
