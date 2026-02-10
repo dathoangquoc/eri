@@ -18,7 +18,7 @@ export default function AboutPage() {
 
         <div className="lg:w-2/3 px-3 lg:px-24 pt-10 lg:pt-60 flex flex-col lg:gap-14 gap-8">
           <hgroup className="flex flex-col gap-5 
-          [&_p>b:first-of-type]:font-normal lg:[&_p>b:first-of-type]:font-bold lg:[&_p>b:first-of-type]:text-2xl [&_p>span]:opacity-35">
+            lg:[&_p>b:first-of-type]:text-2xl [&_p>b:first-of-type]:text-base [&_p>span]:opacity-35 [&_p]:text-sm">
             <p>
               <b>I do creative things.</b> <span>I love the</span> process of
               making: <span>where ideas brew, stumble, and resolve across</span>{" "}
@@ -95,7 +95,7 @@ export default function AboutPage() {
           </hgroup>
 
           {/* Tools */}
-          <hgroup>
+          <hgroup className="pb-24">
             <h3 className="">Tools</h3>
             <div className="flex gap-5 p-4">
               <Image
