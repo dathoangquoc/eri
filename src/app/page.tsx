@@ -48,7 +48,7 @@ export default function Home() {
         </div>
         {/* E */}
         <div className="relative">
-          <WhiteKey path="/mentree" tags={["UI,UX Design", "UX Research"]}>
+          <WhiteKey path="/mentree" video="/" tags={["UI,UX Design", "UX Research"]}>
             Mentree
             <span className="hidden sm:inline"> </span>
             <span className="sm:hidden"> <br /> </span>
