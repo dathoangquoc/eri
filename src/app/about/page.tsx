@@ -10,15 +10,21 @@ export default function AboutPage() {
       </Link>
 
       <main className="flex flex-col lg:flex-row">
-        <div className="px-3 lg:px-24 pt-24 pb-10 border-b lg:border-r">
-          <HoverFollowImage imageSrc="/about/me.jpg">Nhung Le</HoverFollowImage>
-          <p className="pt-3">A multi-disciplinary creative</p>
-          <p className="pt-2">nhung.ple.hn@gmail.com</p>
+        <div className="border-b lg:border-r">
+          <div className="lg:sticky lg:top-24 lg:self-start px-3 lg:px-24 pt-24 pb-10 ">
+            <HoverFollowImage imageSrc="/about/me.jpg">
+              Nhung Le
+            </HoverFollowImage>
+            <p className="pt-3">A multi-disciplinary creative</p>
+            <p className="pt-2">nhung.ple.hn@gmail.com</p>
+          </div>
         </div>
 
         <div className="lg:w-2/3 px-3 lg:px-24 pt-10 lg:pt-60 flex flex-col lg:gap-14 gap-8">
-          <hgroup className="flex flex-col gap-5 
-            lg:[&_p>b:first-of-type]:text-2xl [&_p>b:first-of-type]:text-base [&_p>span]:opacity-35 [&_p]:text-sm">
+          <hgroup
+            className="flex flex-col gap-5 
+            lg:[&_p>b:first-of-type]:text-2xl [&_p>b:first-of-type]:text-base [&_p>span]:opacity-35 [&_p]:text-sm"
+          >
             <p>
               <b>I do creative things.</b> <span>I love the</span> process of
               making: <span>where ideas brew, stumble, and resolve across</span>{" "}
@@ -27,8 +33,8 @@ export default function AboutPage() {
             </p>
             <p>
               <b>I don't work alone.</b> <span>Throughout</span> uni clubs, IMC
-              agency life <span>and</span>{" "}
-              passion groups, <span>I learn</span> the rhythm of collaboration{" "}
+              agency life <span>and</span> passion groups, <span>I learn</span>{" "}
+              the rhythm of collaboration{" "}
               <span>with designers, strategists, and developers.</span>
             </p>
             <p>
@@ -52,7 +58,10 @@ export default function AboutPage() {
             <h3 className="">Education</h3>
             <p>
               <b>Bachelor of Professional Communication</b>{" "}
-              <span className="text-secondary"> <br className="lg:hidden"/>∘ 2022-2026 (3yrs)</span>
+              <span className="text-secondary">
+                {" "}
+                <br className="lg:hidden" />∘ 2022-2026 (3yrs)
+              </span>
             </p>
             <p>RMIT University Vietnam</p>
           </hgroup>
@@ -65,8 +74,7 @@ export default function AboutPage() {
                 <b>Account & Strategy Intern</b>{" "}
                 <span className="text-secondary">
                   {" "}
-                  <br className="lg:hidden"/>
-                  ∘ Oct 2025-Feb 2026 (4 mos){" "}
+                  <br className="lg:hidden" />∘ Oct 2025-Feb 2026 (4 mos){" "}
                 </span>
               </h4>
               <p>Lotte Daehong Communications Vietnam</p>
@@ -74,7 +82,10 @@ export default function AboutPage() {
             <hgroup>
               <h4>
                 <b>Freelance Creative</b>{" "}
-                <span className="text-secondary"> <br className="lg:hidden"/> ∘ June 2024-present </span>
+                <span className="text-secondary">
+                  {" "}
+                  <br className="lg:hidden" /> ∘ June 2024-present{" "}
+                </span>
               </h4>
               <p className="tiny">
                 Projects: myRMIT, Mentree Mentoring App, Bowen Street Press
@@ -86,8 +97,7 @@ export default function AboutPage() {
                 <b>Head of Marketing</b>{" "}
                 <span className="text-secondary">
                   {" "}
-                  <br className="lg:hidden"/>
-                  ∘ Jan 2023-June 2023 (6 mos){" "}
+                  <br className="lg:hidden" />∘ Jan 2023-June 2023 (6 mos){" "}
                 </span>
               </h4>
               <p>RMIT Event Club Hanoi</p>
