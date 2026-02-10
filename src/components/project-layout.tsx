@@ -23,7 +23,7 @@ export default function ProjectPageLayout({
       </Button>
       {/* Left Column */}
       <div className="w-full">
-        <header className="sticky top-27 self-start w-full h-fit lg:px-2">
+        <header className="sticky top-28 self-start w-full h-fit lg:px-2">
           <h1 className="w-full mb-4">{title}</h1>
           <p className="body-1 w-full">{subtitle}</p>
         </header>
@@ -40,7 +40,7 @@ export default function ProjectPageLayout({
           <Button
             asChild
             variant="link"
-            className="absolute top-0 right-0 w-fit h-fit text-md"
+            className="absolute top-6 right-0 w-fit h-fit text-md"
           >
             <Link href="/">Back</Link>
           </Button>
