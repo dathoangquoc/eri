@@ -19,7 +19,9 @@ export default function Home() {
       <div className="lg:px-8 px-2 py-6">
         {/* C */}
         <div className="relative">
-          <WhiteKey path="/pepero-day" video="/bg/pepero.webm">11.11 is PEPERO Day</WhiteKey>
+          <WhiteKey path="/pepero-day" video="/bg/pepero.webm">
+          11.11 is PEPERO Day
+          </WhiteKey>
         </div>
         {/* B */}
         <div className="relative">

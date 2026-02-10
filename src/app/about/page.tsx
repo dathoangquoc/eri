@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import HoverFollowImage from "@/components/hover-follow-image";
 
 export default function AboutPage() {
   return (
@@ -10,7 +11,7 @@ export default function AboutPage() {
 
       <main className="flex flex-col lg:flex-row">
         <div className="px-3 lg:px-24 pt-24 pb-10 border-b lg:border-r">
-          <h2 className="lg:border-b-2 border-dotted">Nhung Le</h2>
+          <HoverFollowImage imageSrc="/about/me.jpg">Nhung Le</HoverFollowImage>
           <p className="pt-3">A multi-disciplinary creative</p>
           <p className="pt-2">nhung.ple.hn@gmail.com</p>
         </div>

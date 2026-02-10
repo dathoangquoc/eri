@@ -43,7 +43,7 @@ export default function PeperoPage() {
         {/* Tiktoks */}
         <Carousel>
           <CarouselContent>
-            <CarouselItem className="basis-full lg:basis-1/3">
+            <CarouselItem className="basis-full md:basis-1/2">
               <>
                 <blockquote
                   className="tiktok-embed"
@@ -106,7 +106,7 @@ export default function PeperoPage() {
                 </blockquote>
               </>
             </CarouselItem>
-            <CarouselItem className="basis-full lg:basis-1/3">
+            <CarouselItem className="basis-full md:basis-1/2">
               <>
                 <blockquote
                   className="tiktok-embed"
@@ -170,7 +170,7 @@ export default function PeperoPage() {
                 </blockquote>
               </>
             </CarouselItem>
-            <CarouselItem className="basis-full lg:basis-1/3">
+            <CarouselItem className="basis-full md:basis-1/2">
               <>
                 <blockquote
                   className="tiktok-embed"

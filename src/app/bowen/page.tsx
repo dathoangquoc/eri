@@ -43,7 +43,7 @@ export default function BowenPage() {
           height="315"
           src="https://www.youtube.com/embed/V0FCStHVsEo?si=I6Ee5-WkrkzyqKCw"
           title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
         />

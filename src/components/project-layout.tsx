@@ -13,7 +13,7 @@ export default function ProjectPageLayout({
   children,
 }: ProjectPageLayoutProps) {
   return (
-    <main className="relative w-screen min-h-screen py-20 px-3 lg:px-6 bg-white text-black flex lg:flex-row flex-col">
+    <main className="relative w-screen min-h-screen py-20 px-3 lg:px-6 bg-white text-black flex lg:flex-row flex-col no-scrollbar">
       <Button
         asChild
         variant="link"
