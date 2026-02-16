@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
+import Image from "next/image";
 
 interface ProjectPageLayoutProps {
   title: string;
@@ -32,6 +33,10 @@ export default function ProjectPageLayout({
       {/* Main content */}
       <section className="flex-1 w-full lg:min-w-[58vw] lg:max-w-[58vw] mt-8">
         {children}
+        <div className="flex place-content-end items-center w-full gap-2">
+        <Image src="/icons/coda.svg" width={30} height={30} alt="Hover Image" />
+        <span className="sheet-notes">Coda</span>
+        </div>
       </section>
 
       {/* Right Column */}

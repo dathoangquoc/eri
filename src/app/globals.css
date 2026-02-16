@@ -91,6 +91,10 @@ body {
     font-family: var(--font-gentium-plus), serif;
     @apply text-base lg:text-lg text-center text-[#444444] font-normal pb-3
   }
+
+  .sheet-notes {
+    font-family: var(--font-gentium-plus), serif;
+  }
 }
 
 @layer utilities {
