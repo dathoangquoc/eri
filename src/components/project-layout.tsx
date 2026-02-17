@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import MusicStaff from "./music-staff";
 
 interface ProjectPageLayoutProps {
   title: string;
@@ -14,7 +15,7 @@ export default function ProjectPageLayout({
   children,
 }: ProjectPageLayoutProps) {
   return (
-    <main className="relative w-screen min-h-screen py-20 px-3 lg:px-6 bg-[#F3F3F3] text-black flex lg:flex-row flex-col no-scrollbar">
+    <main className="relative w-screen min-h-screen py-20 px-3 lg:px-6 bg-[#F3F3F3] text-black flex lg:flex-row flex-col">
       <Button
         asChild
         variant="link"
@@ -30,22 +31,31 @@ export default function ProjectPageLayout({
         </header>
       </div>
 
+      <div className="fixed top-1/3">
+        <MusicStaff/>
+      </div>
+
       {/* Main content */}
-      <section className="flex-1 w-full lg:min-w-[58vw] lg:max-w-[58vw] mt-8">
+      <section className="flex-1 w-full lg:min-w-[58vw] lg:max-w-[58vw] mt-8 z-10 bg-[#F3F3F3]">
         {children}
         <div className="flex place-content-end items-center w-full gap-2">
-        <Image src="/icons/coda.svg" width={30} height={30} alt="Hover Image" />
-        <span className="sheet-notes">Coda</span>
+          <Image
+            src="/icons/coda.svg"
+            width={30}
+            height={30}
+            alt="Hover Image"
+          />
+          <span className="sheet-notes">Coda</span>
         </div>
       </section>
 
       {/* Right Column */}
       <div className="w-full hidden lg:block relative">
-        <div>
+        <div className="sticky top-6">
           <Button
             asChild
             variant="link"
-            className="absolute top-6 right-0 w-fit h-fit text-md"
+            className="w-fit h-fit text-md"
           >
             <Link href="/">Back</Link>
           </Button>
