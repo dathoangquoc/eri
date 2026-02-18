@@ -6,12 +6,18 @@ import MusicStaff from "./music-staff";
 interface ProjectPageLayoutProps {
   title: string;
   subtitle: string;
+  musicStaffLeft: string;
+  musicStaffRight: string;
+  musicStaffBpm: number;
   children: React.ReactNode;
 }
 
 export default function ProjectPageLayout({
   title,
   subtitle,
+  musicStaffLeft,
+  musicStaffRight,
+  musicStaffBpm,
   children,
 }: ProjectPageLayoutProps) {
   return (
@@ -31,12 +37,16 @@ export default function ProjectPageLayout({
         </header>
       </div>
 
-      <div className="fixed top-80 left-1/2 -translate-x-1/2">
-        <MusicStaff/>
+      <div className="hidden lg:block fixed top-100 xl:top-82 left-1/2 -translate-x-1/2">
+      <MusicStaff
+        left={musicStaffLeft}
+        bpm={musicStaffBpm}
+        right={musicStaffRight}
+      />
       </div>
 
       {/* Main content */}
-      <section className="flex-1 w-full lg:min-w-[60vw] lg:max-w-[60vw] px-2 mt-8 z-10 backdrop-blur-sm">
+      <section className="flex-1 w-full lg:min-w-[60vw] lg:max-w-[60vw] px-2 mt-8 z-10">
         {children}
         <div className="flex place-content-end items-center w-full gap-2">
           <Image

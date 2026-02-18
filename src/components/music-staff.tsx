@@ -1,11 +1,17 @@
 const TREBLE_CLEF_SRC = "/icons/treble.png";
 
-const MusicStaff = () => {
+interface MusicStaffProps {
+  left: string;
+  bpm: number;
+  right: string;
+}
+
+export default function MusicStaff({left, bpm, right}: MusicStaffProps) {
   return (
     <div className="w-[85vw] flex flex-col items-center">
         <div className="flex justify-between w-[90%] sheet-notes">
-            <span>Largo <span className="not-italic text-2xl">♩</span> = 66</span>
-            <span>Apr 2025</span>
+            <span>{left} <span className="not-italic text-2xl ml-3">♩</span> = {bpm}</span>
+            <span>{right}</span>
         </div>
       <svg
         viewBox="0 0 1000 100"
@@ -42,5 +48,3 @@ const MusicStaff = () => {
     </div>
   );
 };
-
-export default MusicStaff;
