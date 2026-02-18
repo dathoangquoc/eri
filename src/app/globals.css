@@ -94,6 +94,7 @@ body {
 
   .sheet-notes {
     font-family: var(--font-gentium-plus), serif;
+    @apply italic
   }
 }
 

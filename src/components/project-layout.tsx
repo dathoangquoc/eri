@@ -31,12 +31,12 @@ export default function ProjectPageLayout({
         </header>
       </div>
 
-      <div className="fixed top-1/3">
+      <div className="fixed top-80 left-1/2 -translate-x-1/2">
         <MusicStaff/>
       </div>
 
       {/* Main content */}
-      <section className="flex-1 w-full lg:min-w-[58vw] lg:max-w-[58vw] mt-8 z-10 bg-[#F3F3F3]">
+      <section className="flex-1 w-full lg:min-w-[60vw] lg:max-w-[60vw] px-2 mt-8 z-10 backdrop-blur-sm">
         {children}
         <div className="flex place-content-end items-center w-full gap-2">
           <Image
