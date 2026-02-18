@@ -15,6 +15,9 @@ export default function DatBikePage() {
     <ProjectPageLayout
       title="Dat Bike Quantum S series"
       subtitle="[INFLUENCER CAMPAIGN]"
+      musicStaffLeft="Moderato"
+      musicStaffRight="Oct - Nov 2025"
+      musicStaffBpm={112}
     > 
         {/* Main image */}
         <div>

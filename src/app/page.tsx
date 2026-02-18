@@ -3,7 +3,7 @@ import BlackKey from "@/components/black-key";
 
 export default function Home() {
   return (
-    <main className="text-dark bg-dark h-full">
+    <main className="text-dark bg-dark h-full">      
       <h1>
         <div className="flex px-2 lg:px-8 pt-4 items-center justify-between bg-dark">
           <span className="w-[40%] text-lg lg:text-4xl md:text-[28px] font-medium text-[#E4D0EB]">

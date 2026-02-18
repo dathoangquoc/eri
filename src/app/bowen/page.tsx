@@ -9,6 +9,9 @@ export default function BowenPage() {
     <ProjectPageLayout
       title="Bowen Street Press"
       subtitle="[COMMUNICATION CAMPAIGN]"
+      musicStaffLeft="Moderato"
+      musicStaffRight="Sep - Nov 2024"
+      musicStaffBpm={112}
     >
         {/* Main image */}
         <div>

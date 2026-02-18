@@ -7,13 +7,15 @@ import {
   CarouselDots,
 } from "@/components/ui/carousel";
 import SectionHeading from "@/components/section-heading";
-import { Span } from "next/dist/trace";
 
 export default function PeperoPage() {
   return (
     <ProjectPageLayout
       title="11.11 is PEPERO Day"
       subtitle="[COMMUNICATION CAMPAIGN, OFFLINE ACTIVATION]"
+      musicStaffLeft="Allegro"
+      musicStaffRight="Oct - Nov 2025"
+      musicStaffBpm={122}
     >
       <p>
         My first project in an IMC agency as an Account Intern was, fortunately,

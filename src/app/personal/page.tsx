@@ -5,7 +5,13 @@ import ProjectPageLayout from "@/components/project-layout";
 
 export default function PersonalWorksPage() {
   return (
-    <ProjectPageLayout title="Personal pieces" subtitle="[MIXED MEDIA, POETRY]">
+    <ProjectPageLayout
+      title="Personal pieces"
+      subtitle="[MIXED MEDIA, POETRY]"
+      musicStaffLeft="Adagio"
+      musicStaffRight=""
+      musicStaffBpm={66}
+    >
       <section className="flex-1 w-full lg:min-w-[58vw] lg:max-w-[58vw] mt-8">
         {/* Main image */}
         <div className="body-1">
