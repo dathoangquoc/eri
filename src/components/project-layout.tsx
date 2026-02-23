@@ -61,11 +61,11 @@ export default function ProjectPageLayout({
 
       {/* Right Column */}
       <div className="w-full hidden lg:block relative">
-        <div className="sticky top-6">
+        <div className="sticky top-6 flex justify-end">
           <Button
             asChild
             variant="link"
-            className="w-fit h-fit text-md"
+            className="w-fit h-fit text-md underline"
           >
             <Link href="/">Back</Link>
           </Button>
