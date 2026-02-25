@@ -22,7 +22,7 @@ export default function HoverFollowImage({
   };
 
   return (
-    <div className="relative">
+    <div className="relative w-fit">
       <h2
         className="lg:border-b-2 border-dotted cursor-default"
         onMouseEnter={() => setIsHovering(true)}

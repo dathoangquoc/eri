@@ -9,8 +9,8 @@ interface MusicStaffProps {
 export default function MusicStaff({left, bpm, right}: MusicStaffProps) {
   return (
     <div className="w-[85vw] flex flex-col items-center">
-        <div className="flex justify-between w-[90%] sheet-notes">
-            <span>{left} <span className="not-italic text-2xl ml-3">♩</span> = {bpm}</span>
+        <div className="flex justify-between w-full sheet-notes">
+            <span className="ml-24">{left} <span className="not-italic text-2xl ml-3">♩</span> = {bpm}</span>
             <span>{right}</span>
         </div>
       <svg

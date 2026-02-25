@@ -29,7 +29,7 @@ export default function Home() {
         {/* A */}
         <div className="relative">
           <BlackKey path="/about"> About </BlackKey>
-          <WhiteKey path="/ket-charity" video="/bg/ket.webm" tags={["Video Production", "UI/UX Design", "Copywriting"]}>
+          <WhiteKey path="/ket-charity" video="/bg/ket.webm" tags={["Photography"]}>
             "Ket":
             <span className="hidden sm:inline"> </span>
             <span className="sm:hidden"> <br /> </span>
@@ -39,16 +39,16 @@ export default function Home() {
         {/* G */}
         <div className="relative">
           <BlackKey path="/blogs"> Blogs </BlackKey>
-          <WhiteKey path="/personal" video="/bg/mixed-media.webm" tags={["Photography"]}>Personal Works</WhiteKey>
+          <WhiteKey path="/personal" video="/bg/mixed-media.webm" tags={["Mixed Media"]}>Personal Works</WhiteKey>
         </div>
         {/* F */}
         <div className="relative">
           <BlackKey></BlackKey>
-          <WhiteKey path="/bowen" video="/bg/bowen.webm" tags={["Mixed Media"]}>Bowen Street Press</WhiteKey>
+          <WhiteKey path="/bowen" video="/bg/bowen.webm" tags={["Video Production", "UI/UX Design"]}>Bowen Street Press</WhiteKey>
         </div>
         {/* E */}
         <div className="relative">
-          <WhiteKey path="/mentree" video="/" tags={["UI,UX Design", "UX Research"]}>
+          <WhiteKey path="/mentree" video="/" tags={["UI/UX Design", "UX Research"]}>
             Mentree
             <span className="hidden sm:inline"> </span>
             <span className="sm:hidden"> <br /> </span>
