@@ -65,7 +65,7 @@ export default function ProjectPageLayout({
           <Button
             asChild
             variant="link"
-            className="w-fit h-fit text-md underline"
+            className="w-fit h-fit text-sm underline"
           >
             <Link href="/">Back</Link>
           </Button>
