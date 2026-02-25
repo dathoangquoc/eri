@@ -1,7 +1,11 @@
+'use client'
+
 import Link from "next/link";
 import { Button } from "./ui/button";
 import Image from "next/image";
 import MusicStaff from "./music-staff";
+import { useTransitionRouter } from "next-view-transitions";
+import pageAnimation from "./page-animation";
 
 interface ProjectPageLayoutProps {
   title: string;
@@ -20,6 +24,8 @@ export default function ProjectPageLayout({
   musicStaffBpm,
   children,
 }: ProjectPageLayoutProps) {
+  const router = useTransitionRouter();
+
   return (
     <main className="relative w-screen min-h-screen py-20 px-3 lg:px-6 bg-[#F3F3F3] text-black flex lg:flex-row flex-col">
       <Button
@@ -27,7 +33,17 @@ export default function ProjectPageLayout({
         variant="link"
         className="top-0 right-0 absolute w-fit h-fit text-sm lg:hidden"
       >
-        <Link href="/">Back</Link>
+        <Link
+          href="/"
+          onClick={(e) => {
+            e.preventDefault();
+            router.push("/", {
+              onTransitionReady: pageAnimation,
+            });
+          }}
+        >
+          Back
+        </Link>
       </Button>
       {/* Left Column */}
       <div className="w-full">
@@ -38,11 +54,11 @@ export default function ProjectPageLayout({
       </div>
 
       <div className="hidden lg:block fixed top-100 xl:top-82 left-1/2 -translate-x-1/2">
-      <MusicStaff
-        left={musicStaffLeft}
-        bpm={musicStaffBpm}
-        right={musicStaffRight}
-      />
+        <MusicStaff
+          left={musicStaffLeft}
+          bpm={musicStaffBpm}
+          right={musicStaffRight}
+        />
       </div>
 
       {/* Main content */}
@@ -67,7 +83,17 @@ export default function ProjectPageLayout({
             variant="link"
             className="w-fit h-fit text-md underline"
           >
-            <Link href="/">Back</Link>
+            <Link
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+                router.push("/", {
+                  onTransitionReady: pageAnimation,
+                });
+              }}
+            >
+              Back
+            </Link>
           </Button>
         </div>
       </div>

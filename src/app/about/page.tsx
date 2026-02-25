@@ -1,11 +1,21 @@
+'use client'
+
 import Link from "next/link";
 import Image from "next/image";
 import HoverFollowImage from "@/components/hover-follow-image";
+import { useTransitionRouter } from "next-view-transitions";
+import pageAnimation from "@/components/page-animation";
 
 export default function AboutPage() {
+  const router = useTransitionRouter();
   return (
     <div className="bg-dark text-white">
-      <Link href="/" className="absolute top-8 right-8 text-sm underline">
+      <Link href="/" className="absolute top-8 right-8 text-sm underline" onClick={(e) => {
+        e.preventDefault();
+        router.push('/', {
+          onTransitionReady: pageAnimation,
+        });
+      }}>
         Back
       </Link>
 
