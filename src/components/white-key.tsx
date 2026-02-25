@@ -1,5 +1,9 @@
+'use client'
+
 import Link from "next/link";
 import clsx from "clsx";
+import { useTransitionRouter } from "next-view-transitions";
+import pageAnimation from "./page-animation";
 
 export default function WhiteKey({
   children,
@@ -107,5 +111,12 @@ export default function WhiteKey({
     </div>
   );
 
-  return path ? <Link href={path}>{Container}</Link> : Container;
+  const router = useTransitionRouter();
+  return path ? <Link href={path} onClick={(e) => {
+    e.preventDefault();
+    router.push(path, {
+      onTransitionReady: pageAnimation,
+    })
+  }}>{Container}</Link> : Container;
 }
+

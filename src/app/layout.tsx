@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist_Mono, Gentium_Plus } from "next/font/google";
 import "./globals.css";
 import DevConsoleMessage from "@/components/dev-console-message";
+import { ViewTransitions } from "next-view-transitions";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -25,13 +26,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistMono.variable} ${gentiumPlus.variable} antialiased w-full overflow-x-hidden overflow-y-auto no-scrollbar`}
-      >
-        <DevConsoleMessage/>
-        {children}
-      </body>
-    </html>
+    <ViewTransitions>
+      <html lang="en">
+        <body
+          className={`${geistMono.variable} ${gentiumPlus.variable} antialiased w-full overflow-x-hidden overflow-y-auto no-scrollbar`}
+        >
+          <DevConsoleMessage />
+          {children}
+        </body>
+      </html>
+    </ViewTransitions>
   );
 }
