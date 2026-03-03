@@ -292,7 +292,7 @@ export default function CircularGallery({
         <div 
           key={i} 
           ref={(el) => { itemsRef.current[i] = el; }}
-          className="absolute top-1/2 left-1/2 -translate-y-1/2 w-[45vw] sm:w-[35vw] md:w-[25vw] lg:w-[20vw] max-w-[350px] [&_img]:w-full [&_img]:h-auto [&_img]:object-contain"
+          className="absolute top-1/2 left-1/2 -translate-y-1/2 w-[45vw] sm:w-[35vw] md:w-[25vw] lg:w-[20vw] max-w-[350px]"
         >
           {child}
         </div>

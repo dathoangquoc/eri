@@ -1,13 +1,8 @@
 import Image from "next/image";
 import ProjectPageLayout from "@/components/project-layout";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselDots,
-} from "@/components/ui/carousel";
 import SectionHeading from "@/components/section-heading";
 import CircularGallery from "@/components/circular-gallery";
+import Tiktok from "@/components/tiktok";
 
 export default function PeperoPage() {
   return (
@@ -59,23 +54,20 @@ export default function PeperoPage() {
       </p>
 
       <CircularGallery offsetY={200} spacing={100} bend={2}>
-        <Image
+        <Tiktok
           src="/pepero-day/tiktok-1.png"
           alt="pepero day"
-          width={290}
-          height={544}
+          text="@eveviday"
         />
-        <Image
+        <Tiktok 
           src="/pepero-day/tiktok-2.png"
           alt="pepero day"
-          width={290}
-          height={544}
+          text="@cdgtit99"
         />
-        <Image
+        <Tiktok
           src="/pepero-day/tiktok-3.png"
           alt="pepero day"
-          width={290}
-          height={544}
+          text="@quynhsanhdieu"
         />
       </CircularGallery>
       
@@ -99,52 +91,48 @@ export default function PeperoPage() {
         artists’ accommodation and performances.
       </p>
 
-      <Carousel className="w-full h-fit pb-8">
-        <CarouselContent>
-          <CarouselItem className="h-fit">
-            <video
-              src="/pepero-day/1.webm"
-              className="w-full h-auto block object-cover"
-              autoPlay
-              loop
-              muted
-              playsInline
-            />
-          </CarouselItem>
-          <CarouselItem className="h-fit">
-            <Image
-              src="/pepero-day/2.png"
-              alt="pepero day"
-              width={1134}
-              height={756}
-            />
-          </CarouselItem>
-          <CarouselItem className="h-fit">
-            <video
-              src="/pepero-day/3.webm"
-              className="w-full h-auto block object-cover"
-              autoPlay
-              loop
-              muted
-              playsInline
-            />
-          </CarouselItem>
-          <CarouselItem className="h-fit">
-            <video
-              src="/pepero-day/4.webm"
-              className="w-full h-auto block object-cover"
-              autoPlay
-              loop
-              muted
-              playsInline
-            />
-          </CarouselItem>
-        </CarouselContent>
-        <CarouselDots />
-      </Carousel>
+      <CircularGallery bend={1} spacing={80} offsetY={100}>
+        <div className="aspect-square w-full overflow-hidden rounded-2xl">
+          <video
+            src="/pepero-day/1.webm"
+            className="w-full h-full object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        </div>
+        <div className="aspect-square w-full overflow-hidden rounded-2xl">
+          <Image
+            src="/pepero-day/2.png"
+            alt="pepero day"
+            width={355}
+            height={355}
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="aspect-square w-full overflow-hidden rounded-2xl">
+          <video
+            src="/pepero-day/3.webm"
+            className="w-full h-full object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        </div>
+        <div className="aspect-square w-full overflow-hidden rounded-2xl">
+          <video
+            src="/pepero-day/4.webm"
+            className="w-full h-full object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        </div>
+      </CircularGallery>
 
-      {/* Tiktok script */}
-      <script async src="https://www.tiktok.com/embed.js" />
     </ProjectPageLayout>
   );
 }
