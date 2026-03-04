@@ -48,7 +48,7 @@ export default function ProjectPageLayout({
       {/* Left Column */}
       <div className="w-full">
         <header className="sticky top-28 self-start w-full h-fit lg:px-2">
-          <h1 className="w-full mb-4">{title}</h1>
+          <h1 className="w-full mb-4 text-accent">{title}</h1>
           <p className="body-1 w-full">{subtitle}</p>
         </header>
       </div>
