@@ -8,19 +8,19 @@ interface MusicStaffProps {
 
 export default function MusicStaff({left, bpm, right}: MusicStaffProps) {
   return (
-    <div className="w-[85vw] flex flex-col items-center">
-        <div className="flex justify-between w-full sheet-notes">
-            <span className="ml-24">{left} <span className="not-italic text-2xl ml-3">♩</span> = {bpm}</span>
+    <div className="w-[98vw] flex flex-col items-center">
+        <div className="flex justify-between w-full sheet-notes px-6 md:px-10 text-sm md:text-base">
+            <span className="ml-20 md:ml-28">{left} <span className="not-italic text-xl md:text-2xl ml-2 md:ml-3">♩</span> = {bpm}</span>
             <span>{right}</span>
         </div>
       <svg
         viewBox="0 0 1000 100"
-        className="w-full h-auto stroke-current text-black"
+        className="w-full h-auto stroke-current"
         xmlns="http://www.w3.org/2000/svg"
       >
         {/* --- Staff Lines --- */}
         {/* Y coordinates: 40, 60, 80, 100, 120 */}
-        <g strokeWidth="1" strokeLinecap="round">
+        <g stroke="#C2C2C2" strokeWidth="1" strokeLinecap="round">
           <line x1="0" y1="10" x2="1000" y2="10" />
           <line x1="0" y1="20" x2="1000" y2="20" />
           <line x1="0" y1="30" x2="1000" y2="30" />
@@ -29,7 +29,7 @@ export default function MusicStaff({left, bpm, right}: MusicStaffProps) {
         </g>
 
         {/* --- Vertical End Bars --- */}
-        <g strokeWidth="2">
+        <g stroke="#C2C2C2" strokeWidth="1">
           <line x1="999" y1="10" x2="999" y2="50" />
         </g>
 
