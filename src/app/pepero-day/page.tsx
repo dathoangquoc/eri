@@ -58,16 +58,31 @@ export default function PeperoPage() {
           src="/pepero-day/tiktok-1.png"
           alt="pepero day"
           text="@eveviday"
+          href="https://www.tiktok.com/@eveviday/video/7571329855208377607"
+          likes="18K"
+          comments="108"
+          saves="1500"
+          views="276K"
         />
         <Tiktok 
           src="/pepero-day/tiktok-2.png"
           alt="pepero day"
-          text="@cdgtit99"
+          text="@cdqtit99"
+          href="https://www.tiktok.com/@cdqtit99/video/7571422826020998418"
+          likes="127K"
+          comments="2287"
+          saves="1384"
+          views="762K"
         />
         <Tiktok
           src="/pepero-day/tiktok-3.png"
           alt="pepero day"
           text="@quynhsanhdieu"
+          href="https://www.tiktok.com/@quynhsanhdieu/video/7571098773800160532"
+          likes="19K"
+          comments="234"
+          saves="748"
+          views="271K"
         />
       </CircularGallery>
       
